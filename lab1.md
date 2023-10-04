@@ -31,15 +31,23 @@
 
 *No argument:*
 
-1. ![Image](image4.png)
+* ![Image](image4.png)
+* The working directory was /lecture1 at the time the command was run.
+* We got this output since it was all the files and directories inside of our working directory.
+* This was not an error.
 
 *Directory as argument:*
 
-1. ![Image](image5.png)
+* ![Image](image5.png)
+* The working directory was /lecture1 at the time the command was run.
+* We got this output since it was all of the files inside of our target directory. We passed in messages as the argument to ls, printing out the files of that directory.
+* This was not an error.
 
 *File as argument:*
 
-1. ![Image](image6.png)
+* ![Image](image6.png)
+* The working directory was /lecture1 at the time the command was run.
+* 
 
 ---
 
