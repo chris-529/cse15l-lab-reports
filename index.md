@@ -1,11 +1,9 @@
 # Christopher Schrader - Lab Report 1
 
-*Example Code Block:*
+*Example code block:*
 
 ```
 int main () {
   return 0;
 }
-
-
 ```
