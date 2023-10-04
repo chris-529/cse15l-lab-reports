@@ -47,7 +47,8 @@
 
 * ![Image](image6.png)
 * The working directory was /lecture1 at the time the command was run.
-* 
+* The output I received was the name of the file I used as the argument.
+* This was not an error.
 
 ---
 
@@ -55,14 +56,23 @@
 
 *No argument:*
 
-1. ![Image](image7.png)
+* ![Image](image7.png)
+* The working directory was /lecture1 at the time the command was run.
+* As I ran the command with no argument, I was able to type freely into the console continuously.
+* This was an error. We did not specify a file name to edit or create.
 
 *Directory as argument:*
 
-1. ![Image](image8.png)
+* ![Image](image8.png)
+* The working directory was /lecture1 at the time the command was run.
+* The output was, "Is a directory." This was shown because cat edits files, and does not take a directory as an argument.
+* This was an error since cat is used on files, not directories.
 
 *File as argument:*
 
-1. ![Image](image9.png)
+* ![Image](image9.png)
+* The working directory was /lecture1 at the time the command was run.
+* The output I received was the contents of the file I passed in as an argument. It printed out all of the Java code in my file.
+* This was not an error.
 
 
