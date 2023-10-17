@@ -15,7 +15,7 @@
 
  ![Image](image2.png)
 * The working directory was `/home` at the time the command was run.
-* After the command was run, it changed the working directory to `/lecture1`. This is because our `/home` directory had a lecture1 directory, which was the argument passed to `cd`.
+* After the command was run, it changed the working directory to `/lecture1`. This is because our `/home` directory is the sub directory of `/lecture1`, which was the argument passed to `cd`.
 * This was not an error.
 
 *File as argument:*
