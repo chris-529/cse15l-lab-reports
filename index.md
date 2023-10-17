@@ -13,7 +13,7 @@
 
 *Directory as argument:*
 
- ![Image](image2.png)
+ ![Image](imagenewcd.png)
 * The working directory was `/home` at the time the command was run.
 * After the command was run, it changed the working directory to `/lecture1`. This is because our `/home` directory is the sub directory of `/lecture1`, which was the argument passed to `cd`.
 * This was not an error.
@@ -56,10 +56,10 @@
 
 *No argument:*
 
- ![Image](image7.png)
+ ![Image](Screenshot_4.png)
 * The working directory was `/lecture1` at the time the command was run.
-* As I ran the command with no argument, I was able to type freely into the console continuously.
-* This was an error. We did not specify a file name to edit or create.
+* As I ran the command with no argument, I was able to type freely into the console continuously. The words I typed into the console were printed back to me once I hit enter. I had to hit `CTRL + C` to get out of this behavior.
+* This was not an error.
 
 *Directory as argument:*
 
