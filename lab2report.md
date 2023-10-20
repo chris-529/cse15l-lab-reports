@@ -1,5 +1,5 @@
-### Christopher Schrader
-## Lab Report 2 (Lab 3)
+## Christopher Schrader
+### Lab Report 2 (Lab 3)
 ---
 
 #Code for `StringServer.java`:
