@@ -48,7 +48,7 @@ class StringServer {
 ```
 ---
 
-##Part 1
+## Part 1
 
 Screenshot 1, using `/add-message?s="Hello World!"`:
 ![First](lab3_1.png)
@@ -78,7 +78,7 @@ Screenshot 3, accessing the `/` path of the web server.
    `.getPath()` returns `/`
 3. None of the fields of my class are modified. We simply return the `String wholeMessage` field using `String.format()`
 
-##Part 2
+## Part 2
 
 Path to my private key:
 ![Private key](lab3_4.png)
@@ -89,6 +89,6 @@ Path to my public key:
 SSH without having to enter password:
 ![SSH](lab3_6.png)
 
-##Part 3
+## Part 3
 
 This lab taught me several things I didn't know. I was not aware of how to setup SSH without having to enter a password, which I did by running `ssh-keygen` on my local machine and then using `scp` to move my public and private key to my remote ieng6 account. I also learned how to build a simple web server in Java and handling URL requests by processing a URI.
