@@ -1,6 +1,4 @@
-## Christopher Schrader
-### Lab Report 2 (Lab 3)
----
+## Christopher Schrader - Lab Report 2 (Lab 3)
 
 #Code for `StringServer.java`:
 
@@ -48,7 +46,28 @@ class StringServer {
 }
 
 ```
+---
 
-#Screenshot 1, using `/add-message`:
+#Screenshot 1, using `/add-message?s="Hello World!"`:
 ![First](lab3_1.png)
+
+1. There are multiple methods called in my code upon accessing this path with the given query. For one, `handleRequest()` is called, and numerous object methods are used, such as `url.getPath()`, `url.getQuery()`, and `String.format()`.
+2. The argument to `handleRequest()` is `new URI("localhost:4000/add-message?s"Hello World!");`
+   `.getPath()` returns the path specified, which is `/add-message`
+   `.getQuery()` returns the specified query, which is `s="Hello World!"`
+3. First, we increment the `int numStrings` field of the `Handler` class. 
+   The field `String wholeString` inside the `Handler` class is updated with the `numStrings` field plus a period, the String after `=` in the query, as well as `\n`.
+
+#Screenshot 2, using `/add-message?s="This is the second string."`:
+![Second](lab3_2.png)
+
+1. There are multiple methods called in my code upon accessing this path with the given query. For one, `handleRequest()` is called, and numerous object methods are used, such as `url.getPath()`, `url.getQuery()`, and `String.format()`.
+2. The argument to `handleRequest()` is `new URI("localhost:4000/add-message?s"This is the second string.");`
+   `.getPath()` returns the path specified, which is `/add-message`
+   `.getQuery()` returns the specified query, which is `s="This is the second string."`
+3. First, we increment the `int numStrings` field of the `Handler` class. 
+   The field `String wholeString` inside the `Handler` class is updated with the `numStrings` field plus a period, the String after `=` in the query, as well as `\n`.
+
+#Screenshot 3, accessing the `/` path of the web server.
+![Third](lab_3_3.png)
 
