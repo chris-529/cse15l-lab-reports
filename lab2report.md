@@ -48,7 +48,7 @@ class StringServer {
 ```
 ---
 
-#Screenshot 1, using `/add-message?s="Hello World!"`:
+Screenshot 1, using `/add-message?s="Hello World!"`:
 ![First](lab3_1.png)
 
 1. There are multiple methods called in my code upon accessing this path with the given query. For one, `handleRequest()` is called, and numerous object methods are used, such as `url.getPath()`, `url.getQuery()`, and `String.format()`.
@@ -58,7 +58,7 @@ class StringServer {
 3. First, we increment the `int numStrings` field of the `Handler` class. 
    The field `String wholeString` inside the `Handler` class is updated with the `numStrings` field plus a period, the String after `=` in the query, as well as `\n`.
 
-#Screenshot 2, using `/add-message?s="This is the second string."`:
+Screenshot 2, using `/add-message?s="This is the second string."`:
 ![Second](lab3_2.png)
 
 1. There are multiple methods called in my code upon accessing this path with the given query. For one, `handleRequest()` is called, and numerous object methods are used, such as `url.getPath()`, `url.getQuery()`, and `String.format()`.
@@ -68,8 +68,8 @@ class StringServer {
 3. First, we increment the `int numStrings` field of the `Handler` class. 
    The field `String wholeString` inside the `Handler` class is updated with the `numStrings` field plus a period, the String after `=` in the query, as well as `\n`.
 
-#Screenshot 3, accessing the `/` path of the web server.
-![Third](lab_3_3.png)
+Screenshot 3, accessing the `/` path of the web server.
+![Third](lab3_3.png)
 
 1. One method in the `Handler` class is called, `handleRequest()`, as well as `url.getPath()` and `String.format()`
 2. The argument to `handleRequest()` is `new URI("localhost:4000/")`
