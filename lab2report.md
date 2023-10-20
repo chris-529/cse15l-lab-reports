@@ -71,3 +71,9 @@ class StringServer {
 #Screenshot 3, accessing the `/` path of the web server.
 ![Third](lab_3_3.png)
 
+1. One method in the `Handler` class is called, `handleRequest()`, as well as `url.getPath()` and `String.format()`
+2. The argument to `handleRequest()` is `new URI("localhost:4000/")`
+   `.getPath()` returns `/`
+3. None of the fields of my class are modified. We simply return the `String wholeMessage` field using `String.format()`
+
+   
