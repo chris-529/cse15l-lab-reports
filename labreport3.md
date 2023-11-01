@@ -1,10 +1,10 @@
-## Christopher Schrader - Lab Report 3
+# Christopher Schrader - Lab Report 3
 ---
 
-## Part 1
+# Part 1
 For part 1, I have chosen the faulty `reverseInPlace()` function from `ArrayExamples.java`
 
-Failure inducing input using `{3, 5, 2}` as my array:
+## Failure inducing input using `{3, 5, 2}` as my array:
 
 ```
  @Test
@@ -15,7 +15,7 @@ Failure inducing input using `{3, 5, 2}` as my array:
   }
 ```
 
-# Input that doesn't produce a failure using `{3}` as my array:
+## Input that doesn't produce a failure using `{3}` as my array:
 
 ```
 @Test 
@@ -26,10 +26,10 @@ Failure inducing input using `{3, 5, 2}` as my array:
 	}
 ```
 
-# Symptom:
+## Symptom:
 ![Symptom output](labreport_1.png)
 
-# The bug:
+## The bug:
 The bug was that in the old code, the values of the array were being overwritten as the array was reversed. For example, when the last element was swapped with the first element, the first element was lost forever. I fixed the bug by keeping a temporary `int temp` variable that stores the value of the element at `arr[i]` so that we do not lose it and can put it at the corresponding opposite side of the array. We only loop up to the middle ement since once we get to that point the array has been successfully reversed.
 
 Before code change:
