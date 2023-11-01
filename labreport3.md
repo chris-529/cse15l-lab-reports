@@ -1,5 +1,4 @@
 # Christopher Schrader - Lab Report 3
----
 
 # Part 1
 For part 1, I have chosen the faulty `reverseInPlace()` function from `ArrayExamples.java`
