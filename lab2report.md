@@ -24,7 +24,7 @@ class Handler implements URLHandler {
                 if (parameters[0].equals("s")) {
                     numStrings++;
                     wholeString += numStrings + ". " + parameters[1] + "\n";
-                    return String.format("Successfully added %s to our list of strings/entire string.", parameters[1]);
+                    return String.format("%s", wholeString);
                 }
             }
             return "404 Not Found!";
@@ -44,14 +44,13 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-
 ```
 ---
 
 ## Part 1
 
 Screenshot 1, using `/add-message?s="Hello World!"`:
-![First](lab3_1.png)
+![First](lab3_hello.png)
 
 1. There are multiple methods called in my code upon accessing this path with the given query. For one, `handleRequest()` is called, and numerous object methods are used, such as `url.getPath()`, `url.getQuery()`, and `String.format()`.
 2. The argument to `handleRequest()` is `new URI("localhost:4000/add-message?s"Hello World!");`
@@ -61,7 +60,7 @@ Screenshot 1, using `/add-message?s="Hello World!"`:
    The field `String wholeString` inside the `Handler` class is updated with the `numStrings` field plus a period, the String after `=` in the query, as well as `\n`.
 
 Screenshot 2, using `/add-message?s="This is the second string."`:
-![Second](lab3_2.png)
+![Second](lab3_second.png)
 
 1. There are multiple methods called in my code upon accessing this path with the given query. For one, `handleRequest()` is called, and numerous object methods are used, such as `url.getPath()`, `url.getQuery()`, and `String.format()`.
 2. The argument to `handleRequest()` is `new URI("localhost:4000/add-message?s"This is the second string.");`
