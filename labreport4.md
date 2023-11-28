@@ -31,9 +31,15 @@ Screenshot:
 
 I pressed the following keys to get here:
 ```
-cd lab7<enter>, javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java<enter>, java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests<enter>
+cd lab7<enter>, javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java<enter>,
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests<enter>
 ```
 I did not have these commands in my commands history, so I retyped them.
+The first command steps into the lab7 directory
+Then, the second command compiles all .java files in the current directory, plus
+the `-cp` option to specify the path to JUnit.
+Finally, the third command runs the program, specified with the `ListExamplesTests` class,
+and additionally the JUnit path is specified with `-cp`
 
 ## Step 7 (Edit the code file to fix the failing test)
 
