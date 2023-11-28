@@ -31,7 +31,8 @@ Screenshot:
 
 I pressed the following keys to get here:
 ```
-cd lab7<enter>, javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java<enter>,
+cd lab7<enter>,
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java<enter>,
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests<enter>
 ```
 I did not have these commands in my commands history, so I retyped them.
