@@ -27,7 +27,7 @@ Based on the two different tests that worked and didn't work, I sense that it ha
 
 Running my code with `bash test.sh` and output:
 
-![img](lab5_1.png)
+![image](lab5_1.png)
 
 My merge code:
 
@@ -100,7 +100,7 @@ Hi,
 Thank you, that was the problem. I was improperly incrementing the index of index1 and not index2 once we merged an item from my second List to the merged List. Since I incremented index1 instead of index2 in this case, index2 always stayed 0 and when we used this index, it was always the first element in the list.
 
 Bug in code:
-![img](lab5_2.png)
+![image](lab5_2.png)
 
 ## 4. 
 
